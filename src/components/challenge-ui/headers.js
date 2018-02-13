@@ -22,5 +22,4 @@ const mapStateToProps = state => ({
   questionArray: state.timerReducer.questions,
 });
 
-
 export default connect(mapStateToProps)(Header);
