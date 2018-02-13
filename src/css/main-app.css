@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 0 auto; }
+
+.single-column {
+  margin-left: 25%;
+  margin-right: 25%; }
+
+.placeholder {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #324661;
+  display: inline-block; }

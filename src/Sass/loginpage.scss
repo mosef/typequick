@@ -1,0 +1,75 @@
+@import "vars";
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+input,
+button,
+submit {
+  border: none;
+}
+.login-form {
+  display: inline-block;
+  margin-top: 100px;
+  background-color: #fff;
+  height: 260px;
+  width: 300px;
+  padding-top: 200px;
+  border-radius: 2px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  position: relative;
+  .logo {
+    background-color: $paleRed;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+  }
+  input {
+    margin-left: 3rem;
+    width: calc(100% - 3rem);
+    background-color: transparent;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    position: relative;
+  }
+  label {
+    margin-left: 3rem;
+    color: #9e9e9e;
+    position: absolute;
+    left: 0.75rem;
+    font-size: 1rem;
+    cursor: text;
+    transition: 0.2s ease-out;
+  }
+  button {
+    color: white;
+    background: rgb(230, 69, 69);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+    transition: all 0.3s ease 0s box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:hover {
+      background: rgb(215, 5, 5);
+    }
+  }
+  .form-error {
+    position: absolute;
+    left: 6rem;
+  }
+}

@@ -1,0 +1,15 @@
+nav {
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0px;
+  background-color: #293F5C; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      padding: 5px; }
+    nav ul a {
+      color: white;
+      text-decoration: none; }

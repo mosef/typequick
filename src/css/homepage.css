@@ -1,0 +1,26 @@
+header {
+  background-image: url(../img/Header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  min-width: 100%; }
+
+button {
+  background-color: #EB5757;
+  height: 40px;
+  width: 180px;
+  border-radius: 2px; }
+
+.wrapper {
+  margin: 0 auto; }
+
+.single-column {
+  margin-left: 25%;
+  margin-right: 25%; }
+
+.placeholder {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #324661;
+  display: inline-block; }
