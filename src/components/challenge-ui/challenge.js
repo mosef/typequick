@@ -28,12 +28,12 @@ class ChallengeForm extends Component {
     const { userAnswer, correctAnswer, reset } = this.props;
     userAnswer.push(values.answer);
     if (userAnswer.toString() === correctAnswer.toString()) {
-      this.props.answerSuccess(); // ANSWER_WAS_CORRECT
-      this.props.pickQuestion();// PICKING_RANDOM_QUESTION
+      this.props.answerSuccess();
+      this.props.pickQuestion();
       this.props.clearPrev();
       reset();
     } else {
-      this.props.answerFailure(); // ANSWER_WAS_INCORRECT
+      this.props.answerFailure();
     }
   }
 

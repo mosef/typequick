@@ -17,7 +17,6 @@ function updateItemInArray(array, secondArray) {
     }
   });
   const newArray = updatedArray.filter(obj => obj);
-  console.log('functionUpdates', newArray);
   return newArray;
 }
 
@@ -51,7 +50,6 @@ const timerReducer = (state = defaultState, action) => {
       };
     }
     case actionTypes.pickNextQuestion: {
-      console.log(state.questionsArray);
       const nextQuestion = pickNextQuestion(state.questionsArray);
       return {
         ...state,
