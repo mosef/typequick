@@ -28,7 +28,7 @@ export function registerUser(values) {
   return {
     onRequest: actionTypes.registerRequestTriggered,
     onSuccess: handleSuccessfulRegistration,
-    onFailure: actionTypes.registerRequestFailuer,
+    onFailure: actionTypes.registerRequestFailure,
     promise,
   };
 }

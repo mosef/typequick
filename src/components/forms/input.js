@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 export default class Input extends Component {
-  componentDidUpdate(prevProps) {
-    if (!prevProps.meta.active && this.props.meta.active) {
-      this.input.focus();
-    }
-  }
-
   render() {
     let error;
     if (this.props.meta.touched && this.props.meta.error) {

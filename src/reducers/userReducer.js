@@ -1,3 +1,5 @@
+import * as actionTypes from '../actions/actionTypes';
+
 const defualtState = {
   isAuthenticated: false,
   user: {
@@ -12,7 +14,7 @@ const defualtState = {
 
 const userReducer = (state = defualtState, action) => {
   switch (action.type) {
-    case 'AUTH_REQUEST_SUCCESS': {
+    case actionTypes.authRequestSuccess: {
       return {
         ...state,
         isAuthenticated: true,

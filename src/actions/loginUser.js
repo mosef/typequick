@@ -24,7 +24,7 @@ export function authenticateUser(values) {
   return {
     onRequest: actionTypes.authRequestTriggered,
     onSuccess: handleSuccessfulAuthentication,
-    onFailure: actionTypes.authRequestFailuer,
+    onFailure: actionTypes.authRequestFailure,
     promise,
   };
 }

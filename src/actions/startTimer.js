@@ -17,7 +17,7 @@ export const startTimerNow = () => {
 };
 
 export const stopTimerNow = (startedAt) => {
-  const promise = fetch('https://gentle-taiga-62884.herokuapp.com/api/sessions/stop', {
+  const promise = fetch('https://gentle-taiga-62884.herokuapp.com/api/sessions/', {
     method: 'POST',
     body: JSON.stringify({
       userId: '', // obtained from session storage when post request is made to start

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { startTimerNow } from '../../actions/startTimer';
 import Timer from './timer';
-import Header from './headers';
-import ChallengeForm from '../forms/challengeForm';
+import ChallengeForm from '../challenge-ui/challenge';
 
 class StartButton extends Component {
   render() {
@@ -12,7 +11,6 @@ class StartButton extends Component {
         {this.props.timer.isTimerRunning ?
           <div>
             <Timer startedAt={this.props.timer.currentTimerStartedAt} />
-            <Header />
             <ChallengeForm />
           </div>
           :
