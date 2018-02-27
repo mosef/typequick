@@ -1,4 +1,13 @@
 import * as actionTypes from '../actions/actionTypes';
+import {
+  onLoad,
+  updateItemInArray,
+  checkArray,
+  pickNextQuestion,
+  finalQuestion,
+} from './timerReducerLogic';
+
+const ProgressBar = require('progressbar.js');
 
 const defaultState = {
   isTimerRunning: false,
@@ -6,28 +15,19 @@ const defaultState = {
   questionsArray: [],
   currentQuestionArray: [],
   userAnswer: [],
+  answerIsCorrect: false,
   questionHeader: [],
   correctAnswer: [],
 };
 
-function updateItemInArray(array, secondArray) {
-  const updatedArray = array.map((item) => {
-    if (item.question !== secondArray[0].question) {
-      return item;
-    }
-  });
-  const newArray = updatedArray.filter(obj => obj);
-  return newArray;
-}
-
-function pickNextQuestion(array) {
-  const preparedQuestion = array[
-    Math.floor(Math.random() * array.length)];
-  return [preparedQuestion];
-}
-
 const timerReducer = (state = defaultState, action) => {
   switch (action.type) {
+    case actionTypes.startTimerTriggered: {
+      return {
+        ...state,
+        loading: onLoad(),
+      };
+    }
     case actionTypes.startTimerSuccess:
       return {
         ...state,
@@ -46,16 +46,25 @@ const timerReducer = (state = defaultState, action) => {
       return {
         ...state,
         questionsArray: newQuestionList,
-        // do something to show user success
+        answerIsCorrect: true,
       };
     }
     case actionTypes.pickNextQuestion: {
-      const nextQuestion = pickNextQuestion(state.questionsArray);
+      if (state.questionsArray.length !== 0 || undefined) {
+        checkArray(state.questionsArray, state);
+        const nextQuestion = pickNextQuestion(state.questionsArray);
+        return {
+          ...state,
+          currentQuestionArray: nextQuestion,
+          questionHeader: nextQuestion[0].question.header,
+          correctAnswer: nextQuestion[0].question.answer,
+        };
+      }
+      if (state.questionsArray.length === 0 || undefined) {
+        finalQuestion(state);
+      }
       return {
         ...state,
-        currentQuestionArray: nextQuestion,
-        questionHeader: nextQuestion[0].question.header,
-        correctAnswer: nextQuestion[0].question.answer,
       };
     }
     case actionTypes.clearPrev:
@@ -67,12 +76,14 @@ const timerReducer = (state = defaultState, action) => {
       return {
         ...state,
         userAnswer: [],
+        answerIsCorrect: false,
         // do something to show user was wrong
       };
     case actionTypes.clearState:
       return {
         isTimerRunning: false,
         currentTimerStartedAt: null,
+        answerIsCorrect: false,
         questionsArray: [],
         currentQuestionArray: [],
         userAnswer: [],

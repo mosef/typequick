@@ -15,6 +15,7 @@ class StartButton extends Component {
           </div>
           :
           <div>
+            <div className="progress" id="progress" />
             <button onClick={this.props.startTimerNow}>Start</button>
           </div>
           }

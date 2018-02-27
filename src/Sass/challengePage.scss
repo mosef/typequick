@@ -11,3 +11,11 @@
   grid-column: 2/12;
   grid-row: 1/6;
 }
+
+.progress {
+  height: 300px;
+}
+.progress > svg {
+  height: 100%;
+  display: block;
+}
