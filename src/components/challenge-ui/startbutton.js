@@ -11,7 +11,8 @@ class StartButton extends Component {
         {this.props.timer.isTimerRunning ?
           <div>
             <Timer startedAt={this.props.timer.currentTimerStartedAt} />
-            <ChallengeForm />
+            {this.props.challengeCompleted ?
+              (null) : (<ChallengeForm />)}
           </div>
           :
           <div>
@@ -26,6 +27,7 @@ class StartButton extends Component {
 
 
 const mapStateToProps = state => ({
+  challengeCompleted: state.timerReducer.challengeCompleted,
   timer: {
     isTimerRunning: state.timerReducer.isTimerRunning,
     currentTimerStartedAt: state.timerReducer.currentTimerStartedAt,

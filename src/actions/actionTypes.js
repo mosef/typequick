@@ -34,3 +34,7 @@ export const answerWasWrong = 'ANSWER_WAS_INCORRECT';
 export const pickNextQuestion = 'PICKING_RANDOM_QUESTION';
 export const clearPrev = 'CLEARING_PREVIOUS_STATE';
 export const clearState = 'STATE_WAS_CLEARED';
+export const gatherResults = 'GATHERING_RESULTS';
+export const sendResultsTriggered = 'SENDING_RESULTS_TRIGGERED';
+export const sendResultsSuccess = 'SENDING_RESULTS_SUCCESS';
+export const sendResultsFailure = 'SENDING_RESULTS_FAILURE';

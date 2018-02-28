@@ -20,32 +20,10 @@ function updateItemInArray(array, secondArray) {
   return newArray;
 }
 
-function checkArray(array, state) {
-  if (array.length === 0 || 'undefined') {
-    console.log(array);
-    return {
-      ...state,
-    };
-  }
-}
-
 function pickNextQuestion(array) {
   const preparedQuestion = array[
     Math.floor(Math.random() * array.length)];
   return [preparedQuestion];
 }
 
-function finalQuestion(state) {
-  if (state.answerIsCorrect === true) {
-    return {
-      ...state,
-      testOne: console.log('Correct'),
-    };
-  }
-  return {
-    ...state,
-    testTwo: console.log('wrong'),
-  };
-}
-
-export { onLoad, updateItemInArray, checkArray, pickNextQuestion, finalQuestion };
+export { onLoad, updateItemInArray, pickNextQuestion };

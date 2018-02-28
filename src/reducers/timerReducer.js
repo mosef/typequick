@@ -2,12 +2,8 @@ import * as actionTypes from '../actions/actionTypes';
 import {
   onLoad,
   updateItemInArray,
-  checkArray,
   pickNextQuestion,
-  finalQuestion,
 } from './timerReducerLogic';
-
-const ProgressBar = require('progressbar.js');
 
 const defaultState = {
   isTimerRunning: false,
@@ -15,9 +11,10 @@ const defaultState = {
   questionsArray: [],
   currentQuestionArray: [],
   userAnswer: [],
-  answerIsCorrect: false,
+  answerIsCorrect: true,
   questionHeader: [],
   correctAnswer: [],
+  challengeCompleted: false,
 };
 
 const timerReducer = (state = defaultState, action) => {
@@ -51,7 +48,6 @@ const timerReducer = (state = defaultState, action) => {
     }
     case actionTypes.pickNextQuestion: {
       if (state.questionsArray.length !== 0 || undefined) {
-        checkArray(state.questionsArray, state);
         const nextQuestion = pickNextQuestion(state.questionsArray);
         return {
           ...state,
@@ -60,35 +56,39 @@ const timerReducer = (state = defaultState, action) => {
           correctAnswer: nextQuestion[0].question.answer,
         };
       }
-      if (state.questionsArray.length === 0 || undefined) {
-        finalQuestion(state);
-      }
       return {
         ...state,
       };
     }
-    case actionTypes.clearPrev:
+    case actionTypes.sendResultsSuccess:
+      return {
+        ...state,
+        challengeCompleted: true,
+      };
+    case actionTypes.clearPrev: {
       return {
         ...state,
         userAnswer: [],
       };
+    }
+
     case actionTypes.answerWasWrong:
       return {
         ...state,
         userAnswer: [],
         answerIsCorrect: false,
-        // do something to show user was wrong
       };
     case actionTypes.clearState:
       return {
         isTimerRunning: false,
         currentTimerStartedAt: null,
-        answerIsCorrect: false,
+        answerIsCorrect: true,
         questionsArray: [],
         currentQuestionArray: [],
         userAnswer: [],
         questionHeader: [],
         correctAnswer: [],
+        challengeCompleted: false,
       };
     default:
       return state;

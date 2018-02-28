@@ -1,5 +1,5 @@
 @import "bourbon";
-
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 //Colors
 $babyBlue: #56CCF2;
 $darkBlue: #293F5C;
@@ -29,3 +29,6 @@ $base-font-size: 1em;
 // Line-Height
 $base-line-height: 1.5;
 $header-line-height: 1.25;
+
+//Font-Family
+$code-pro: 'Source Code Pro', monospace;

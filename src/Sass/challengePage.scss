@@ -11,11 +11,41 @@
   grid-column: 2/12;
   grid-row: 1/6;
 }
-
 .progress {
   height: 300px;
 }
 .progress > svg {
   height: 100%;
   display: block;
+}
+#answer {
+  background-color: $offWhite;
+  width: 22em;
+  height: 2em;
+  border-bottom: 2px solid transparentize($color: #000000, $amount: .8);
+  text-align: center;
+  font-size: 2em;
+  font-family: $code-pro;
+}
+.feedback-bar {
+  background-color: $paleRed;
+  width: 22em;
+  height: .2em;
+  font-size: 2em;
+  animation: wrong-answer 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+@keyframes wrong-answer {
+  0% {
+    background-color: $paleRed;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.challenge-submit {
+  margin-top: 15px;
 }
