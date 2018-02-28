@@ -4032,22 +4032,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/components\/account-ui\/card.js": {
+	"\/src\/components\/account-ui\/cardlist.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/src\/components\/account-ui\/card-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/account-ui\/cardslist.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/account-ui\/cardslist-min.js",
+		"oAP": "\/src\/components\/account-ui\/cardlist-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

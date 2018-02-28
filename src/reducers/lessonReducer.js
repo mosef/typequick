@@ -1,7 +1,9 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const defaultSate = {
-  lessons: [],
+  lesson: [],
+  requestedLesson: [],
+  lessonRecieved: false,
 };
 
 const lessonReducer = (state = defaultSate, action) => {
@@ -9,7 +11,8 @@ const lessonReducer = (state = defaultSate, action) => {
     case actionTypes.getLessonsSuccess:
       return {
         ...state,
-        lessons: action.response,
+        lesson: action.response.lesson,
+        lessonRecieved: true,
       };
     default:
       return state;

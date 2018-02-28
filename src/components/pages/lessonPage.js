@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../account-ui/card';
+import CardList from '../account-ui/cardlist';
 import Sidebar from '../account-ui/sidebar';
 
 const lessonPage = () => (
@@ -8,9 +8,7 @@ const lessonPage = () => (
       <Sidebar />
     </section>
     <main>
-      <Card />
-      <Card />
-      <Card />
+      <CardList />
     </main>
   </div>
 );
