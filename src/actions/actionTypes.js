@@ -23,6 +23,11 @@ export const authRequestTriggered = 'AUTH_REQUEST_TRIGGERED';
 export const authRequestSuccess = 'AUTH_REQUEST_SUCCESS';
 export const authRequestFailure = 'AUTH_REQUEST_ERROR';
 
+// Chart actions
+export const getChartDataTriggered = 'GETCHART_DATA_TRIGGERED';
+export const getChartDataSuccess = 'GETCHART_DATA_SUCCESS';
+export const getChartDataFailure = 'GETCHART_DATA_FAILURE';
+
 // answerSubmission actions
 export const submitRequestSuccessTriggered = 'SUBMIT_REQUEST_TRIGGERED';
 export const submitRequestSuccess = 'SUBMIT_REQUEST_SUCCESS';

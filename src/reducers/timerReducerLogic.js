@@ -11,10 +11,12 @@ function onLoad() {
 }
 
 function updateItemInArray(array, secondArray) {
-  const updatedArray = array.map((item) => {
+  const updatedArray = [];
+  array.map((item) => {
     if (item.question !== secondArray[0].question) {
-      return item;
+      updatedArray.push(item);
     }
+    return updatedArray;
   });
   const newArray = updatedArray.filter(obj => obj);
   return newArray;

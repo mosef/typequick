@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from '../account-ui/sidebar';
+import Chart from '../account-ui/Chart';
 import '../../css/accountpage.css';
 
 const DashPage = () => (
@@ -8,7 +9,7 @@ const DashPage = () => (
       <Sidebar />
     </section>
     <main>
-      <h1>Dash Info Here</h1>
+      <Chart />
 
     </main>
   </div>

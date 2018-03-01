@@ -9,10 +9,10 @@ export function clearState() {
   };
 }
 
-export function getLessons() {
+export function getChartData() {
   const token = sessionStorage.getItem('token');
   const decoded = jwtDecode(token);
-  const promise = fetch(' https://gentle-taiga-62884.herokuapp.com/api/lessons/title', {
+  const promise = fetch(' https://gentle-taiga-62884.herokuapp.com/api/users/scores/', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -21,14 +21,12 @@ export function getLessons() {
     },
     body: JSON.stringify({
       userId: decoded._id,
-      lessonTitle: 'Learn Emmet',
     }),
   });
   return {
-    onRequest: actionTypes.getLessonsTriggered,
-    onSuccess: actionTypes.getLessonsSuccess,
-    onFailure: actionTypes.getLessonsFailure,
+    onRequest: actionTypes.getChartDataTriggered,
+    onSuccess: actionTypes.getChartDataSuccess,
+    onFailure: actionTypes.getChartDataFailure,
     promise,
   };
 }
-

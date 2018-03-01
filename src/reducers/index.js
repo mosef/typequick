@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import { loadingBarReducer } from 'react-redux-loading-bar';
 import { routerReducer } from 'react-router-redux';
 import signupToggle from '../reducers/signupReducer';
 import lessonReducer from '../reducers/lessonReducer';
@@ -12,7 +11,6 @@ const reducer = combineReducers({
   routing: routerReducer,
   signupToggle,
   lessonReducer,
-  loadingBar: loadingBarReducer,
   timerReducer,
   userReducer,
 });

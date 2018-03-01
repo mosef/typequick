@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getLessons } from '../../actions/grablesson';
+import { getLessons, clearState } from '../../actions/grablesson';
 
 class CardList extends Component {
-  componentWillMount() {
-    this.props.requestedLesson.push({ title: 'Learn Emmet' });
+  componentWillUnmount() {
+    this.props.clearState();
   }
   render() {
     return (
@@ -14,7 +14,7 @@ class CardList extends Component {
         (
           <div className="card">
             <button onClick={() => {
-            this.props.getLessons(this.props.requestedLesson);
+            this.props.getLessons();
             }}
             > Learn Emmet
             </button>
@@ -34,8 +34,7 @@ class CardList extends Component {
 
 const mapStateToProps = state => ({
   lesson: state.lessonReducer.lesson,
-  requestedLesson: state.lessonReducer.requestedLesson,
   lessonRecieved: state.lessonReducer.lessonRecieved,
 });
 
-export default connect((mapStateToProps), { getLessons })(CardList);
+export default connect((mapStateToProps), { getLessons, clearState })(CardList);

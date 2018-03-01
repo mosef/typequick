@@ -14,6 +14,13 @@ const lessonReducer = (state = defaultSate, action) => {
         lesson: action.response.lesson,
         lessonRecieved: true,
       };
+    case actionTypes.clearState:
+      return {
+        ...state,
+        lesson: [],
+        requestedLesson: [],
+        lessonRecieved: false,
+      };
     default:
       return state;
   }

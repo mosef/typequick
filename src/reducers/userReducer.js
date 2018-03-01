@@ -1,15 +1,13 @@
 import * as actionTypes from '../actions/actionTypes';
+import { handleChartData, allScores } from '../actions/ChartLogic';
 
 const defualtState = {
   isAuthenticated: false,
   user: {
-    id: '',
-    username: '',
-    email: '',
     session: '',
     lesson: '',
-    score: '',
   },
+  scores: [],
 };
 
 const userReducer = (state = defualtState, action) => {
@@ -21,6 +19,18 @@ const userReducer = (state = defualtState, action) => {
         user: action.response,
       };
     }
+    case actionTypes.getChartDataSuccess: {
+      const responseItem = action.response.scores;
+      handleChartData(responseItem);
+      return {
+        ...state,
+        scores: allScores[0],
+      };
+    }
+    case actionTypes.clearState:
+      return {
+        scores: [],
+      };
     default: {
       return state;
     }
