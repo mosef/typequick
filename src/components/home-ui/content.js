@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { Info, Headline, InfoImg } from './ContentItems';
+import { signUpClickBottom } from '../../actions/registerUser';
 import slow from '../../img/slow.gif';
 import fast from '../../img/fast.gif';
 
@@ -36,12 +37,15 @@ class Content extends Component {
           <InfoImg image={slow} />
           <h3>Like this:</h3>
           <InfoImg image={fast} />
-          <Link to="/login" className="login-Link">
-            <button className="btn-bottom"> Start Learning! </button>
-          </Link>
+          <button className="btn-bottom" onClick={() => { this.props.signUpClickBottom(); }}> Start Learning! </button>
         </section>
       </div>
     );
   }
 }
-export default Content;
+
+const mapStateToProps = state => ({
+  clicked: state.homeReducer.clicked,
+});
+
+export default connect((mapStateToProps), { signUpClickBottom })(Content);

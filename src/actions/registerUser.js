@@ -8,6 +8,13 @@ export function signUpClick() {
   };
 }
 
+export function signUpClickBottom() {
+  window.scrollTo(0, 0);
+  return {
+    type: actionTypes.signUpClicked,
+  };
+}
+
 export function cancelSignUp() {
   return {
     type: actionTypes.cancelSignUp,
