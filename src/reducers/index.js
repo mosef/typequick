@@ -1,15 +1,15 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import { routerReducer } from 'react-router-redux';
-import signupToggle from '../reducers/signupReducer';
 import lessonReducer from '../reducers/lessonReducer';
 import timerReducer from '../reducers/timerReducer';
 import userReducer from '../reducers/userReducer';
+import homeReducer from '../reducers/homeReducer';
 
 const reducer = combineReducers({
   form: formReducer,
   routing: routerReducer,
-  signupToggle,
+  homeReducer,
   lessonReducer,
   timerReducer,
   userReducer,

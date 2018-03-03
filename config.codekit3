@@ -4162,16 +4162,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/components\/forms\/signup.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/forms\/signup-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/src\/components\/forms\/signupForm.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4352,6 +4342,28 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/src\/img\/Arrow.png": {
+		"ft": 32768,
+		"iS": 475,
+		"oA": 0,
+		"oAP": "\/src\/img\/Arrow.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/img\/back-cap.png": {
+		"ft": 32768,
+		"iS": 911,
+		"oA": 0,
+		"oAP": "\/src\/img\/back-cap.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/src\/img\/Background.png": {
 		"ft": 32768,
 		"iS": 52851,
@@ -4428,6 +4440,16 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/reducers\/homeReducer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/reducers\/homeReducer-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

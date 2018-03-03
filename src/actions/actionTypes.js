@@ -14,6 +14,8 @@ export const stopTimerSuccess = 'STOP_TIMER_REQUEST_SUCCESS';
 export const stopTimerFailure = 'STOP_TIMER_REQUEST_ERROR';
 
 // register actions
+export const signUpClicked = 'REGISTRATION_WAS_CLICKED';
+export const cancelSignUp = 'REGISTRATION_WAS_CANCELED';
 export const registerRequestTriggered = 'REGISTER_REQUEST_TRIGGERED';
 export const registerRequestSuccess = 'REGISTER_REQUEST_SUCCESS';
 export const registerRequestFailure = 'REGISTER_REQUEST_ERROR';

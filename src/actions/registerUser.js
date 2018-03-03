@@ -2,6 +2,18 @@ import { push } from 'react-router-redux';
 import * as actionTypes from './actionTypes';
 import { authenticateUser } from './loginUser';
 
+export function signUpClick() {
+  return {
+    type: actionTypes.signUpClicked,
+  };
+}
+
+export function cancelSignUp() {
+  return {
+    type: actionTypes.cancelSignUp,
+  };
+}
+
 const handleSuccessfulRegistration = (response, dispatch, values) => {
   authenticateUser(values)
     .then(() => {
