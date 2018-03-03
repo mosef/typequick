@@ -7,7 +7,7 @@
 		"uuidString": "066C3370-92AF-4469-A48C-757AE78D58AA"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/.eslintrc.js": {
 		"ft": 64,
@@ -4192,22 +4192,52 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/components\/home-ui\/content.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/home-ui\/content-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/home-ui\/ContentItems.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/home-ui\/ContentItems-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/home-ui\/header.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/home-ui\/header-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/home-ui\/HeaderItems.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/home-ui\/HeaderItems-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/components\/login\/protectedRoute.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/components\/login\/protectedRoute-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/navbar.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/navbar-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4322,6 +4352,25 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/src\/img\/Background.png": {
+		"ft": 32768,
+		"iS": 52851,
+		"oA": 0,
+		"oAP": "\/src\/img\/Background.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/img\/fast.gif": {
+		"ft": 4194304,
+		"iS": 635794,
+		"oA": 0,
+		"oAP": "\/src\/img\/fast.gif",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/src\/img\/Header.png": {
 		"ft": 32768,
 		"iS": 268071,
@@ -4330,6 +4379,36 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/img\/slow.gif": {
+		"ft": 4194304,
+		"iS": 2155025,
+		"oA": 0,
+		"oAP": "\/src\/img\/slow.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/src\/img\/SpaceBar.png": {
+		"ft": 32768,
+		"iS": 3522,
+		"oA": 0,
+		"oAP": "\/src\/img\/SpaceBar.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/img\/TypeWriter.png": {
+		"ft": 32768,
+		"iS": 88518,
+		"oA": 0,
+		"oAP": "\/src\/img\/TypeWriter.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4352,16 +4431,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/src\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/src\/reducers\/index.js": {
 		"ft": 64,

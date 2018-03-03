@@ -1,0 +1,47 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Info, Headline, InfoImg } from './ContentItems';
+import slow from '../../img/slow.gif';
+import fast from '../../img/fast.gif';
+
+class Content extends Component {
+  render() {
+    return (
+      <div className="main-container">
+        <section className="firstSection">
+          <Headline header="What's it for" tail="?" />
+          <Info text="TypeQuick is a learning tool for
+              new and experienced developers who are comfortable with
+              writing code but want to do so faster. Code schools and
+              developer programs don’t teach you syntax extensions like
+              Emmet. The practical application for
+              that is to ensure you’re not dependant on said extensions.
+              However, when you’re ready to use those extensions, another
+              issue arises; It’s all documentation, not practice. There’s no
+              chance for you to commit those extensions to muscle memory and
+              stop referencing cheat sheets or having tabs open to look up an
+              abbreviation."
+          />
+        </section>
+        <section className="secondSection">
+          <Headline header="How it works" tail=":" />
+          <Info text="TypeQuick will improve your development time by cutting out
+              repetitive element typing. Pick a library you’d like to practice
+              with and begin lessons that range from basic to expert. In each
+              lesson small sections reveal code snippets and actions that produce
+              multiple lines of code in a single line. Once you feel confident
+              that you’ve got the snippets down it’s time for some time trials."
+          />
+          <h3>Learn to do this:</h3>
+          <InfoImg image={slow} />
+          <h3>Like this:</h3>
+          <InfoImg image={fast} />
+          <Link to="/login" className="login-Link">
+            <button className="btn-bottom"> Start Learning! </button>
+          </Link>
+        </section>
+      </div>
+    );
+  }
+}
+export default Content;

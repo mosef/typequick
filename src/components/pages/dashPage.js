@@ -10,7 +10,6 @@ const DashPage = () => (
     </section>
     <main>
       <Chart />
-
     </main>
   </div>
 );

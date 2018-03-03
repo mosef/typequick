@@ -15,8 +15,9 @@ main {
 }
 //nav
 section {
- background-color: $darkBlue;
+ background-color: $offWhite;
  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ padding-bottom: 15px;
  grid-column: 1/2;
  grid-row: 1/12;
   ul {

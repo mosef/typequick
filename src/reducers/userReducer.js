@@ -29,6 +29,7 @@ const userReducer = (state = defualtState, action) => {
     }
     case actionTypes.clearState:
       return {
+        ...state,
         scores: [],
       };
     default: {
