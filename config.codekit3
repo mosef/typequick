@@ -4353,17 +4353,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/src\/img\/back-cap.png": {
-		"ft": 32768,
-		"iS": 911,
-		"oA": 0,
-		"oAP": "\/src\/img\/back-cap.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"\/src\/img\/Background.png": {
 		"ft": 32768,
 		"iS": 52851,
@@ -4382,17 +4371,6 @@
 		"oAP": "\/src\/img\/fast.gif",
 		"oF": 0,
 		"opt": 1
-		},
-	"\/src\/img\/Header.png": {
-		"ft": 32768,
-		"iS": 268071,
-		"oA": 0,
-		"oAP": "\/src\/img\/Header.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/src\/img\/slow.gif": {
 		"ft": 4194304,
