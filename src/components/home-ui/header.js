@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import TypeWriter from '../../img/TypeWriter.png';
 import SpaceBar from '../../img/SpaceBar.png';
 import { HeaderImg } from './HeaderItems';
-import { signUpClick } from '../../actions/registerUser';
+import { signUpClick } from '../../actions/RegisterActions';
 import SignUpForm from '../forms/signupForm';
 
 class Header extends Component {

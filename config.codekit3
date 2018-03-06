@@ -3972,6 +3972,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/actions\/ChallengeActions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/actions\/ChallengeActions-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/actions\/ChartActions.js": {
 		"ft": 64,
 		"ma": 0,
@@ -3982,102 +3992,42 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/actions\/ChartLogic.js": {
+	"\/src\/actions\/LessonActions.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/src\/actions\/ChartLogic-min.js",
+		"oAP": "\/src\/actions\/LessonActions-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/actions\/grablesson.js": {
+	"\/src\/actions\/LoginActions.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/src\/actions\/grablesson-min.js",
+		"oAP": "\/src\/actions\/LoginActions-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/actions\/loginUser.js": {
+	"\/src\/actions\/RegisterActions.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/src\/actions\/loginUser-min.js",
+		"oAP": "\/src\/actions\/RegisterActions-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/actions\/registerUser.js": {
+	"\/src\/actions\/TimerActions.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/src\/actions\/registerUser-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/actions\/startTimer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/actions\/startTimer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/actions\/toggle-signup.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/actions\/toggle-signup-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/actions\/validateAnswer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/actions\/validateAnswer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/account-ui\/cardlist.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/account-ui\/cardlist-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/account-ui\/Chart.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/account-ui\/Chart-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/account-ui\/sidebar.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/account-ui\/sidebar-min.js",
+		"oAP": "\/src\/actions\/TimerActions-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4098,16 +4048,6 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/components\/challenge-ui\/challenge-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/challenge-ui\/startbutton.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/challenge-ui\/startbutton-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4138,6 +4078,36 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/components\/challenge-ui\/timesUp-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/dash-ui\/Chart.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/dash-ui\/Chart-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/dash-ui\/navbar.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/dash-ui\/navbar-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/forms\/challengeForm.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/forms\/challengeForm-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4222,12 +4192,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/components\/login\/protectedRoute.js": {
+	"\/src\/components\/lesson-ui\/Lessons.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/src\/components\/login\/protectedRoute-min.js",
+		"oAP": "\/src\/components\/lesson-ui\/Lessons-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4342,6 +4312,36 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/src\/handlers\/ChartLogic.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/handlers\/ChartLogic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/handlers\/protectedRoute.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/handlers\/protectedRoute-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/handlers\/timerReducerLogic.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/handlers\/timerReducerLogic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/img\/Arrow.png": {
 		"ft": 32768,
 		"iS": 475,
@@ -4452,32 +4452,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/reducers\/signupReducer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/reducers\/signupReducer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/src\/reducers\/timerReducer.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/reducers\/timerReducer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/reducers\/timerReducerLogic.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/reducers\/timerReducerLogic-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4502,19 +4482,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/Sass\/accountpage.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/css\/accountpage.css",
-		"oF": 2,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/src\/Sass\/challengePage.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4524,6 +4491,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/src\/css\/challengePage.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/Sass\/dashPage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/css\/accountpage.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
@@ -4563,19 +4543,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/src\/css\/loginpage.css",
-		"oF": 2,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/src\/Sass\/navbar.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/css\/navbar.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1

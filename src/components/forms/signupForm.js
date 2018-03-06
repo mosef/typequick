@@ -3,7 +3,7 @@ import { Field, reduxForm, focus } from 'redux-form';
 import { connect } from 'react-redux';
 import Input from './input';
 import { required, nonEmpty } from './validators';
-import { registerUser, cancelSignUp } from '../../actions/registerUser';
+import { registerUser, cancelSignUp } from '../../actions/RegisterActions';
 import backArrow from '../../img/Arrow.png';
 // import '../css/signup.css';
 

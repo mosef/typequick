@@ -3,7 +3,7 @@ import {
   onLoad,
   updateItemInArray,
   pickNextQuestion,
-} from './timerReducerLogic';
+} from '../handlers/timerReducerLogic';
 
 const defaultState = {
   isTimerRunning: false,

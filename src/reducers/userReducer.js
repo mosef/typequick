@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import { handleChartData, allScores } from '../actions/ChartLogic';
+import handleChartData from '../handlers/ChartLogic';
 
 const defualtState = {
   isAuthenticated: false,
@@ -12,6 +12,11 @@ const defualtState = {
 
 const userReducer = (state = defualtState, action) => {
   switch (action.type) {
+    case actionTypes.registerRequestSuccess: {
+      return {
+        ...state,
+      };
+    }
     case actionTypes.authRequestSuccess: {
       return {
         ...state,
@@ -21,10 +26,9 @@ const userReducer = (state = defualtState, action) => {
     }
     case actionTypes.getChartDataSuccess: {
       const responseItem = action.response.scores;
-      handleChartData(responseItem);
       return {
         ...state,
-        scores: allScores[0],
+        scores: handleChartData(responseItem),
       };
     }
     case actionTypes.clearState:

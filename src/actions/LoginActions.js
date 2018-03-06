@@ -1,7 +1,8 @@
+/* eslint import/prefer-default-export: 0 */
 import { push } from 'react-router-redux';
 import * as actionTypes from './actionTypes';
 
-const handleSuccessfulAuthentication = (response, dispatch) => {
+export const handleSuccessfulAuthentication = (response, dispatch) => {
   sessionStorage.setItem('token', response.token);
   dispatch({
     type: actionTypes.authRequestSuccess,

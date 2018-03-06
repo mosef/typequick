@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Info, Headline, InfoImg } from './ContentItems';
-import { signUpClickBottom } from '../../actions/registerUser';
+import { signUpClickBottom } from '../../actions/RegisterActions';
 import slow from '../../img/slow.gif';
 import fast from '../../img/fast.gif';
 

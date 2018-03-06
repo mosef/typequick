@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => (
-  <div className="sidebar">
+const Navbar = () => (
+  <div className="dash-nav">
     <ul>
       <li><Link to="/dash">Dash</Link></li>
       <li><Link to="/lesson">Lesson</Link></li>
@@ -12,4 +12,4 @@ const Sidebar = () => (
   </div>
 );
 
-export default Sidebar;
+export default Navbar;

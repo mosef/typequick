@@ -1,6 +1,5 @@
 import { push } from 'react-router-redux';
 import * as actionTypes from './actionTypes';
-import { authenticateUser } from './loginUser';
 
 export function signUpClick() {
   return {
@@ -21,16 +20,13 @@ export function cancelSignUp() {
   };
 }
 
-const handleSuccessfulRegistration = (response, dispatch, values) => {
-  authenticateUser(values)
-    .then(() => {
-      sessionStorage.setItem('token', response.token);
-      dispatch({
-        type: actionTypes.authRequestSuccess,
-        response,
-      });
-      dispatch(push('/dash'));
-    });
+const handleSuccessfulRegistration = (response, dispatch) => {
+  sessionStorage.setItem('token', response.token);
+  dispatch({
+    type: actionTypes.authRequestSuccess,
+    response,
+  });
+  dispatch(push('/dash'));
 };
 
 export function registerUser(values) {
@@ -43,7 +39,6 @@ export function registerUser(values) {
       },
       body: JSON.stringify(values),
     });
-
   return {
     onRequest: actionTypes.registerRequestTriggered,
     onSuccess: handleSuccessfulRegistration,
@@ -51,4 +46,3 @@ export function registerUser(values) {
     promise,
   };
 }
-

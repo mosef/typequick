@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getLessons, clearState } from '../../actions/grablesson';
+import { getLessons, clearState } from '../../actions/LessonActions';
 
-class CardList extends Component {
+class Lessons extends Component {
   componentWillUnmount() {
     this.props.clearState();
   }
@@ -37,4 +37,4 @@ const mapStateToProps = state => ({
   lessonRecieved: state.lessonReducer.lessonRecieved,
 });
 
-export default connect((mapStateToProps), { getLessons, clearState })(CardList);
+export default connect((mapStateToProps), { getLessons, clearState })(Lessons);

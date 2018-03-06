@@ -12,19 +12,20 @@ main {
   grid-row: 1/12;
   padding-top: 10px; }
 
-section {
-  background-color: #F2F2F2;
+.sidebar {
+  background-color: #293F5C;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding-bottom: 15px;
   grid-column: 1/2;
-  grid-row: 1/12; }
-  section ul {
+  grid-row: 1/13; }
+  .sidebar ul {
     text-align: center;
     list-style: none;
-    padding: 0px; }
-    section ul li {
+    padding: 0px;
+    height: 100%; }
+    .sidebar ul li {
       padding: 5px; }
-    section ul a {
+    .sidebar ul a {
       color: white;
       text-decoration: none; }
 

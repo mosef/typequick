@@ -4,7 +4,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { history } from '../store/store';
 import '../css/App.css';
 
-import ProtectedRoute from './login/protectedRoute';
+import ProtectedRoute from '../handlers/protectedRoute';
 import loginForm from '../components/forms/loginForm';
 import DashPage from '../components/pages/dashPage';
 import HomePage from '../components/pages/homePage';

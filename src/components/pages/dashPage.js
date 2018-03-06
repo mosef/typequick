@@ -1,12 +1,12 @@
 import React from 'react';
-import Sidebar from '../account-ui/sidebar';
-import Chart from '../account-ui/Chart';
+import Navbar from '../dash-ui/navbar';
+import Chart from '../dash-ui/Chart';
 import '../../css/accountpage.css';
 
 const DashPage = () => (
-  <div className="container">
+  <div className="dash-container">
     <section>
-      <Sidebar />
+      <Navbar />
     </section>
     <main>
       <Chart />

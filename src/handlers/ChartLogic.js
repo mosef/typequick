@@ -1,5 +1,3 @@
-export const allScores = [];
-
 function convertScore(arrayItem) {
   if (arrayItem.indexOf('s') > -1) {
     arrayItem.replace(/s/, '');
@@ -18,7 +16,7 @@ function convertAttempt(attempt) {
   return converted;
 }
 
-export const handleChartData = (data) => {
+const handleChartData = (data) => {
   const newArray = Object.entries(data);
   const newEntries = newArray.map(item => item);
   const scoreCoordinates = newEntries.map((arry) => {
@@ -30,6 +28,7 @@ export const handleChartData = (data) => {
       r: 5,
     };
   });
-  allScores.push(scoreCoordinates);
+  return scoreCoordinates;
 };
 
+export default handleChartData;

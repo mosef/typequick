@@ -1,14 +1,14 @@
 import React from 'react';
-import CardList from '../account-ui/cardlist';
-import Sidebar from '../account-ui/sidebar';
+import Lessons from '../lesson-ui/Lessons';
+import Navbar from '../dash-ui/navbar';
 
 const lessonPage = () => (
-  <div className="container">
+  <div className="lesson-container">
     <section>
-      <Sidebar />
+      <Navbar />
     </section>
     <main>
-      <CardList />
+      <Lessons />
     </main>
   </div>
 );

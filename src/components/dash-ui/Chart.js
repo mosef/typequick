@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Bubble } from 'react-chartjs-2';
+import PropTypes from 'prop-types';
 import { getChartData, clearState } from '../../actions/ChartActions';
 
 function chartLib(item) {
@@ -34,6 +35,17 @@ function chartLib(item) {
 }
 
 class Chart extends Component {
+  static propTypes = {
+    scores: PropTypes.shape({
+      score: PropTypes.arrayOf(PropTypes.object),
+    }),
+    getChartData: PropTypes.func.isRequired,
+    clearState: PropTypes.func.isRequired,
+  }
+  static defaultProps = {
+    scores: [{ x: 0, y: 0, r: 5 }],
+  }
+
   componentDidMount() {
     this.props.getChartData();
   }
@@ -44,7 +56,14 @@ class Chart extends Component {
     return (
       <div className="chart">
       CHART COMPONENT
-        <Bubble data={chartLib(this.props.scores)} />
+        <Bubble
+          data={chartLib(this.props.scores)}
+          width={100}
+          height={50}
+          options={{
+            maintainAspectRatio: false,
+          }}
+        />
         <div className="legend">
           <p>The numbers in order when pointing at a bubble:</p>
           <p>Attempt Number, time taken, bubble radius</p>

@@ -1,14 +1,14 @@
 import React from 'react';
-import Sidebar from '../account-ui/sidebar';
-import StartButton from '../challenge-ui/startbutton';
+import Navbar from '../dash-ui/navbar';
+import Challenge from '../challenge-ui/challenge';
 
 const challengePage = () => (
-  <div className="container">
+  <div className="challenge-container">
     <section>
-      <Sidebar />
+      <Navbar />
     </section>
     <main>
-      <StartButton />
+      <Challenge />
     </main>
   </div>
 );

@@ -4,7 +4,7 @@ import { Field, reduxForm, focus } from 'redux-form';
 import { connect } from 'react-redux';
 import Input from './input';
 import { required, nonEmpty } from './validators';
-import { authenticateUser } from '../../actions/loginUser';
+import { authenticateUser } from '../../actions/LoginActions';
 import '../../css/loginpage.css';
 
 const LoginForm = props => (
