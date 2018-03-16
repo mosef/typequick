@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import TypeWriter from '../../img/TypeWriter.png';
 import SpaceBar from '../../img/SpaceBar.png';
 import { HeaderImg } from './HeaderItems';
@@ -8,6 +9,13 @@ import { signUpClick } from '../../actions/RegisterActions';
 import SignUpForm from '../forms/signupForm';
 
 class Header extends Component {
+  static propTypes = {
+    signUpClick: PropTypes.func.isRequired,
+    clicked: PropTypes.bool,
+  }
+  static defaultProps = {
+    clicked: false,
+  }
   render() {
     return (
       <div className="header-container">

@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Info, Headline, InfoImg } from './ContentItems';
 import { signUpClickBottom } from '../../actions/RegisterActions';
 import slow from '../../img/slow.gif';
 import fast from '../../img/fast.gif';
 
 class Content extends Component {
+  static propTypes = {
+    signUpClickBottom: PropTypes.func.isRequired,
+  }
   render() {
     return (
       <div className="main-container">

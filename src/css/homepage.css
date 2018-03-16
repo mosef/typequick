@@ -33,16 +33,19 @@
     z-index: 1;
     margin-top: 60px; }
     .header-container .headerText h1 {
+      font-size: 2.5em;
       font-weight: 700; }
     .header-container .headerText h2 {
-      font-size: 24px;
-      font-weight: 400; }
+      font-size: 1.2em;
+      font-weight: 400;
+      opacity: .5; }
     .header-container .headerText span {
-      color: #EB5757; }
+      color: #09EEAF; }
     .header-container .headerText .signUp-Button {
       cursor: pointer; }
       .header-container .headerText .signUp-Button:hover {
-        color: white; }
+        color: white;
+        background-color: #09EEAF; }
   .header-container .login-Link,
   .header-container .TypeWriter {
     align-self: end;
@@ -63,7 +66,7 @@
     .header-container .login-Link img {
       width: 80%; }
     .header-container .login-Link h3 {
-      color: white;
+      color: black;
       font-weight: 400;
       font-size: 1.125em;
       text-decoration: none;
@@ -73,7 +76,7 @@
       right: 25%;
       z-index: 2; }
     .header-container .login-Link:hover h3 {
-      color: #EB5757; }
+      color: #F2F2F2; }
 
 .main-container {
   display: grid;
@@ -93,7 +96,7 @@
     margin-right: 10px;
     display: inline-block; }
   .main-container .redTail {
-    color: #EB5757; }
+    color: #09EEAF; }
   .main-container .headline {
     height: 50px; }
     .main-container .headline h2 {
@@ -115,7 +118,7 @@
       color: white; }
 
 button {
-  background-color: #EB5757;
+  background-color: #2EE8B5;
   height: 40px;
   width: 180px;
   border-radius: 2px; }

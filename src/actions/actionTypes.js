@@ -36,12 +36,12 @@ export const submitRequestSuccess = 'SUBMIT_REQUEST_SUCCESS';
 export const submitRequestSuccessFailure = 'SUBMIT_REQUEST_ERROR';
 
 // challengeForm actions
+export const pickQuestion = 'PICKING_QUESTION';
+export const handleData = 'HANDLING_DATA';
 export const answerWasCorrect = 'ANSWER_WAS_CORRECT';
 export const answerWasWrong = 'ANSWER_WAS_INCORRECT';
-export const pickNextQuestion = 'PICKING_RANDOM_QUESTION';
-export const clearPrev = 'CLEARING_PREVIOUS_STATE';
 export const clearState = 'STATE_WAS_CLEARED';
-export const gatherResults = 'GATHERING_RESULTS';
+export const challengeComplete = 'CHALLENGE_COMPLETED';
 export const sendResultsTriggered = 'SENDING_RESULTS_TRIGGERED';
 export const sendResultsSuccess = 'SENDING_RESULTS_SUCCESS';
 export const sendResultsFailure = 'SENDING_RESULTS_FAILURE';

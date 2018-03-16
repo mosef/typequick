@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+.lesson-container main {
+  padding-top: 25px !important; }
+
+.lesson-container .card {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 460px;
+  width: 300px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .lesson-container .card .palceHolder {
+    height: 50%;
+    width: 100%; }
+    @media (min-width: 48em) {
+      .lesson-container .card .palceHolder {
+        background-color: green; } }
+    @media (min-width: 64em) {
+      .lesson-container .card .palceHolder {
+        background-color: #293F5C; } }
+  .lesson-container .card .overview {
+    background-color: #324661;
+    height: p;
+      height-margin: 0; }
+  .lesson-container .card .learn-button {
+    cursor: pointer; }
+    .lesson-container .card .learn-button:hover {
+      color: white; }

@@ -1,0 +1,40 @@
+@import 'vars';
+
+.lesson-container {
+  main {
+    padding-top: 25px !important;
+  }
+.card {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 460px;
+  width: 300px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    .palceHolder{
+      height: 50%;
+      width: 100%;
+      @media #{$mq-small} {
+        background-color: green;
+      }
+      @media #{$mq-medium} {
+        background-color: $darkBlue;
+      }
+    }
+    .overview {
+      background-color: $offDarkBlue;
+      height: 
+      p{
+        margin: 0;
+      }
+    }
+    .learn-button {
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

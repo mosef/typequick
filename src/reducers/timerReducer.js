@@ -1,35 +1,27 @@
+import { dataHandler, questionHandler } from '../handlers/answerChecker';
 import * as actionTypes from '../actions/actionTypes';
-import {
-  onLoad,
-  updateItemInArray,
-  pickNextQuestion,
-} from '../handlers/timerReducerLogic';
 
 const defaultState = {
   isTimerRunning: false,
   currentTimerStartedAt: null,
+  currentTimerStoppedAt: null,
+  data: [],
   questionsArray: [],
-  currentQuestionArray: [],
   userAnswer: [],
+  correctAnswer: [],
   answerIsCorrect: true,
   questionHeader: [],
-  correctAnswer: [],
   challengeCompleted: false,
+  showReturn: false,
 };
 
 const timerReducer = (state = defaultState, action) => {
   switch (action.type) {
-    case actionTypes.startTimerTriggered: {
-      return {
-        ...state,
-        loading: onLoad(),
-      };
-    }
     case actionTypes.startTimerSuccess:
       return {
         ...state,
         isTimerRunning: true,
-        currentTimerStartedAt: Date.now(),
+        currentTimerStartedAt: action.response.startedAt,
         questionsArray: action.response.questions[0].questions,
       };
     case actionTypes.stopTimerSuccess:
@@ -38,56 +30,54 @@ const timerReducer = (state = defaultState, action) => {
         isTimerRunning: false,
         currentTimerStartedAt: state.currentTimerStartedAt,
       };
+    case actionTypes.handleData: {
+      const newData = dataHandler(state.data);
+      return {
+        ...state,
+        questionHeader: newData.updatedData.preparedHeader,
+        correctAnswer: newData.updatedData.preparedAnswer,
+        questionsArray: newData.updatedData.remainingQuestions,
+      };
+    }
     case actionTypes.answerWasCorrect: {
-      const newQuestionList = updateItemInArray(state.questionsArray, state.currentQuestionArray);
+      const update = questionHandler(state.questionsArray);
       return {
         ...state,
-        questionsArray: newQuestionList,
-        answerIsCorrect: true,
-      };
-    }
-    case actionTypes.pickNextQuestion: {
-      if (state.questionsArray.length !== 0 || undefined) {
-        const nextQuestion = pickNextQuestion(state.questionsArray);
-        return {
-          ...state,
-          currentQuestionArray: nextQuestion,
-          questionHeader: nextQuestion[0].question.header,
-          correctAnswer: nextQuestion[0].question.answer,
-        };
-      }
-      return {
-        ...state,
-      };
-    }
-    case actionTypes.sendResultsSuccess:
-      return {
-        ...state,
-        challengeCompleted: true,
-      };
-    case actionTypes.clearPrev: {
-      return {
-        ...state,
+        questionHeader: update.data.preparedHeader,
+        correctAnswer: update.data.preparedAnswer,
+        questionsArray: update.data.remainingQuestions,
         userAnswer: [],
+        answerIsCorrect: true,
+        currentTimerStoppedAt: update.data.currentTimerStoppedAt,
       };
     }
-
     case actionTypes.answerWasWrong:
       return {
         ...state,
         userAnswer: [],
         answerIsCorrect: false,
       };
+    case actionTypes.challengeComplete:
+      return {
+        ...state,
+        challengeCompleted: true,
+      };
+    case actionTypes.sendResultsSuccess:
+      return {
+        ...state,
+        showReturn: true,
+      };
     case actionTypes.clearState:
       return {
         isTimerRunning: false,
         currentTimerStartedAt: null,
-        answerIsCorrect: true,
+        currentTimerStoppedAt: null,
+        data: [],
         questionsArray: [],
-        currentQuestionArray: [],
         userAnswer: [],
-        questionHeader: [],
         correctAnswer: [],
+        answerIsCorrect: true,
+        questionHeader: [],
         challengeCompleted: false,
       };
     default:

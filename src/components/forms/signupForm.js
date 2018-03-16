@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Field, reduxForm, focus } from 'redux-form';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Input from './input';
 import { required, nonEmpty } from './validators';
 import { registerUser, cancelSignUp } from '../../actions/RegisterActions';
@@ -8,6 +9,11 @@ import backArrow from '../../img/Arrow.png';
 // import '../css/signup.css';
 
 class SignupForm extends Component {
+  static propTypes = {
+    handleSubmit: PropTypes.func.isRequired,
+    registerUser: PropTypes.func.isRequired,
+    cancelSignUp: PropTypes.func.isRequired,
+  }
   render() {
     return (
       <form

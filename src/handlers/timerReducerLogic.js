@@ -1,31 +1,12 @@
 const ProgressBar = require('progressbar.js');
 
-function onLoad() {
-  const circle = new ProgressBar.Circle('#progress', {
-    color: '#FCB03C',
-    duration: 3000,
+export default function onLoad(idname) {
+  const circle = new ProgressBar.Circle(idname, {
+    color: '#09EEAF',
+    duration: 6000,
     easing: 'easeInOut',
+    strokeWidth: 3,
   });
 
   circle.animate(1);
 }
-
-function updateItemInArray(array, secondArray) {
-  const updatedArray = [];
-  array.map((item) => {
-    if (item.question !== secondArray[0].question) {
-      updatedArray.push(item);
-    }
-    return updatedArray;
-  });
-  const newArray = updatedArray.filter(obj => obj);
-  return newArray;
-}
-
-function pickNextQuestion(array) {
-  const preparedQuestion = array[
-    Math.floor(Math.random() * array.length)];
-  return [preparedQuestion];
-}
-
-export { onLoad, updateItemInArray, pickNextQuestion };

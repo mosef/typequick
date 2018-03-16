@@ -58,7 +58,7 @@ class Chart extends Component {
       CHART COMPONENT
         <Bubble
           data={chartLib(this.props.scores)}
-          width={100}
+          width={50}
           height={50}
           options={{
             maintainAspectRatio: false,

@@ -4052,6 +4052,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/components\/challenge-ui\/challengeForm.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/challenge-ui\/challengeForm-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/components\/challenge-ui\/timer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4098,16 +4108,6 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/components\/dash-ui\/navbar-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/forms\/challengeForm.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/components\/forms\/challengeForm-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4242,6 +4242,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/components\/pages\/loginPage.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/pages\/loginPage-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/css\/accountpage.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4282,6 +4292,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/src\/css\/lessonPage.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/css\/lessonPage-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/src\/css\/loginpage.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4311,6 +4331,16 @@
 		"oAP": "\/src\/css\/navbar-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/src\/handlers\/answerChecker.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/handlers\/answerChecker-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/src\/handlers\/ChartLogic.js": {
 		"ft": 64,
@@ -4372,6 +4402,17 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/src\/img\/signUp-bg.png": {
+		"ft": 32768,
+		"iS": 551259,
+		"oA": 0,
+		"oAP": "\/src\/img\/signUp-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/src\/img\/slow.gif": {
 		"ft": 4194304,
 		"iS": 2155025,
@@ -4379,6 +4420,17 @@
 		"oAP": "\/src\/img\/slow.gif",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/src\/img\/Space Bar.png": {
+		"ft": 32768,
+		"iS": 1963,
+		"oA": 0,
+		"oAP": "\/src\/img\/Space Bar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/img\/SpaceBar.png": {
 		"ft": 32768,
@@ -4530,6 +4582,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/src\/index.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/Sass\/lessonPage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/css\/lessonPage.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1

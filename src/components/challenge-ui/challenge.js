@@ -1,10 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { reduxForm } from 'redux-form';
+import PropTypes from 'prop-types';
 import { startTimerNow } from '../../actions/TimerActions';
+import { clearState } from '../../actions/ChallengeActions';
+import ChallengeForm from './challengeForm';
 import Timer from './timer';
-import ChallengeForm from '../challenge-ui/challenge';
+import '../../css/challengePage.css';
+
 
 class Challenge extends Component {
+  static propTypes = {
+    timer: PropTypes.shape({
+      isTimerRunning: PropTypes.bool,
+      currentTimerStartedAt: PropTypes.number,
+    }),
+    startTimerNow: PropTypes.func.isRequired,
+    challengeCompleted: PropTypes.bool,
+    clearState: PropTypes.func.isRequired,
+  }
+  static defaultProps = {
+    timer: {
+      isTimerRunning: false,
+      currentTimerStartedAt: 0,
+    },
+    challengeCompleted: false,
+  }
+  componentWillUnmount() {
+    this.props.clearState();
+  }
   render() {
     return (
       <div>
@@ -39,6 +63,8 @@ const mapStateToProps = state => ({
   },
 });
 
+const connected = connect(mapStateToProps, { startTimerNow, clearState })(Challenge);
 
-export default connect(mapStateToProps, { startTimerNow })(Challenge);
-
+export default reduxForm({
+  form: 'ChallengeForm',
+})(connected);

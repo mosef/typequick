@@ -1,5 +1,6 @@
 import * as actionTypes from '../actions/actionTypes';
 import handleChartData from '../handlers/ChartLogic';
+import onLoad from '../handlers/timerReducerLogic';
 
 const defualtState = {
   isAuthenticated: false,
@@ -13,6 +14,12 @@ const defualtState = {
 const userReducer = (state = defualtState, action) => {
   switch (action.type) {
     case actionTypes.registerRequestSuccess: {
+      return {
+        ...state,
+      };
+    }
+    case actionTypes.authRequestTriggered: {
+      onLoad('#loading');
       return {
         ...state,
       };
