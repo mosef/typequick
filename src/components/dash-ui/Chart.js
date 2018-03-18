@@ -55,7 +55,6 @@ class Chart extends Component {
   render() {
     return (
       <div className="chart">
-      CHART COMPONENT
         <Bubble
           data={chartLib(this.props.scores)}
           width={50}
