@@ -7,7 +7,7 @@ const timeRenderer = ({
   if (completed) {
     return <TimesUp />;
   }
-  return <span>{hours}:{minutes}:{seconds}</span>;
+  return <div className="clock"><span>{minutes}:{seconds}</span></div>;
 };
 
 export default timeRenderer;

@@ -2,11 +2,31 @@
 html {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0 auto;
+  background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
+    button {
+      height: 40px;
+      width: 180px;
+      border-radius: 2px;
+      color: white;
+      border: none;
+      background-color: $palegreen;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      margin-top: 10px;
+      transition: all 0.3s ease 0s box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      &:hover {
+        background: $greenbtn;
+      }
+    }
     ul {
       margin-top: 0;
     }
@@ -18,12 +38,16 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(100px, auto);
   margin: 0 auto;
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
   section {
     grid-column: 1/2;
     grid-row: 1/12;
     z-index: 2;
     @include mobile {
-      grid-column: 1/14;
+      grid-column: 1/1;
       grid-row: 1/2;
       z-index: 2;
       height: 50px;
@@ -32,7 +56,6 @@ body {
       background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
       height: 100%;
       padding-top: 15px;
-      padding-bottom: 15px;
       @include mobile {
         height: auto;
         padding-top: 10px 0px;
@@ -51,33 +74,36 @@ body {
              padding-left: 10px;
            }
          }
-         a{
+         a {
            color: rgb(255, 255, 255);
            text-decoration: none;
            cursor: pointer;
-           &:hover {
+           @include mobile {
             svg {
-              path {
-                fill: $palegreen !important;
+              width: 10%;
+              height: 10%;
+            }
+           }
+            &:hover {
+              svg {
+                path {
+                  fill: $palegreen !important;
+                }
               }
+            }
           }
-           
-          }
-         }
-       }
-       &:hover {
+        }
+      &:hover {
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-       }
-     }
+      }
+    }
   }
     main {
-      background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
       grid-column: 2/14;
-      grid-row: 1/12;
       padding-top: 10px;
       z-index: 1;
       @include mobile {
-        grid-column: 1/14;
+        grid-column: 1/1;
         grid-row: 1/2;
         margin-top: 45px;
       }
