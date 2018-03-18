@@ -38,6 +38,12 @@ const userReducer = (state = defualtState, action) => {
         scores: handleChartData(responseItem),
       };
     }
+    case actionTypes.logout: {
+      return {
+        ...state,
+        isAuthenticated: false,
+      };
+    }
     case actionTypes.clearState:
       return {
         ...state,

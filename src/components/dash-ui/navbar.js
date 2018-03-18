@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from './icon';
 import { ICONS } from './iconConstants';
+import { logout } from '../../actions/logout';
 
 const Navbar = () => (
   <div className="dash-nav">
@@ -25,7 +26,7 @@ const Navbar = () => (
         </Link>
       </li>
       <li>
-        <Link to="/logout">
+        <Link to="/" onClick={() => { logout(); }}>
           <Icon icon={ICONS.EXIT} size={48} color="#09EEAF" />
       Logout
         </Link>
