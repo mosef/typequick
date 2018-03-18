@@ -83,7 +83,7 @@ class ChallengeForm extends Component {
   render() {
     return (
       <div>
-        <h1>{this.props.questionHeader}</h1>
+        <h1 className="form-header">{this.props.questionHeader}</h1>
         <div className="form-box">
           <div className="questions-container">
             <form className="challenge-form">

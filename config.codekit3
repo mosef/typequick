@@ -4102,6 +4102,26 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/components\/dash-ui\/icon.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/dash-ui\/icon-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/dash-ui\/iconConstants.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/dash-ui\/iconConstants-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/components\/dash-ui\/navbar.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4188,6 +4208,26 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/components\/home-ui\/HeaderItems-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/lesson-ui\/examples.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/lesson-ui\/examples-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/components\/lesson-ui\/lessonImages.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/lesson-ui\/lessonImages-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -4394,6 +4434,25 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/src\/img\/divs.gif": {
+		"ft": 4194304,
+		"iS": 1292355,
+		"oA": 0,
+		"oAP": "\/src\/img\/divs.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/src\/img\/emmet-logo.png": {
+		"ft": 32768,
+		"iS": 11154,
+		"oA": 0,
+		"oAP": "\/src\/img\/emmet-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/src\/img\/fast.gif": {
 		"ft": 4194304,
 		"iS": 635794,
@@ -4401,6 +4460,78 @@
 		"oAP": "\/src\/img\/fast.gif",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/src\/img\/grouping.gif": {
+		"ft": 4194304,
+		"iS": 2453396,
+		"oA": 0,
+		"oAP": "\/src\/img\/grouping.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/src\/img\/ic_book_48px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/img\/ic_book_48px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/img\/ic_code_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/img\/ic_code_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/img\/ic_exit_to_app_48px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/img\/ic_exit_to_app_48px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/img\/ic_timeline_48px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/img\/ic_timeline_48px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/img\/multiply.gif": {
+		"ft": 4194304,
+		"iS": 1151535,
+		"oA": 0,
+		"oAP": "\/src\/img\/multiply.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/src\/img\/nesting.gif": {
+		"ft": 4194304,
+		"iS": 993061,
+		"oA": 0,
+		"oAP": "\/src\/img\/nesting.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/src\/img\/siblings.gif": {
+		"ft": 4194304,
+		"iS": 913352,
+		"oA": 0,
+		"oAP": "\/src\/img\/siblings.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/src\/img\/signUp-bg.png": {
 		"ft": 32768,

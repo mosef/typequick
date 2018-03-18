@@ -23,27 +23,58 @@ body {
       grid-column: 1/2;
       grid-row: 1/12;
       z-index: 2; }
+      @media only screen and (min-width: 320px) and (max-width: 48em) {
+        body .lesson-container section,
+        body .challenge-container section,
+        body .dash-container section {
+          grid-column: 1/14;
+          grid-row: 1/2;
+          z-index: 2;
+          height: 50px; } }
       body .lesson-container section .dash-nav,
       body .challenge-container section .dash-nav,
       body .dash-container section .dash-nav {
-        background-color: #F2F2F2;
+        background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
         height: 100%;
+        padding-top: 15px;
         padding-bottom: 15px; }
+        @media only screen and (min-width: 320px) and (max-width: 48em) {
+          body .lesson-container section .dash-nav,
+          body .challenge-container section .dash-nav,
+          body .dash-container section .dash-nav {
+            height: auto;
+            padding-top: 10px 0px; } }
         body .lesson-container section .dash-nav ul,
         body .challenge-container section .dash-nav ul,
         body .dash-container section .dash-nav ul {
           text-align: center;
           list-style: none;
           padding: 0px; }
+          @media only screen and (min-width: 320px) and (max-width: 48em) {
+            body .lesson-container section .dash-nav ul,
+            body .challenge-container section .dash-nav ul,
+            body .dash-container section .dash-nav ul {
+              display: inline; } }
           body .lesson-container section .dash-nav ul li,
           body .challenge-container section .dash-nav ul li,
           body .dash-container section .dash-nav ul li {
-            padding: 5px; }
+            padding-top: 15px; }
+            @media only screen and (min-width: 320px) and (max-width: 48em) {
+              body .lesson-container section .dash-nav ul li,
+              body .challenge-container section .dash-nav ul li,
+              body .dash-container section .dash-nav ul li {
+                display: inherit;
+                padding-left: 10px; } }
           body .lesson-container section .dash-nav ul a,
           body .challenge-container section .dash-nav ul a,
           body .dash-container section .dash-nav ul a {
-            color: black;
-            text-decoration: none; }
+            color: white;
+            text-decoration: none;
+            cursor: pointer; }
+            body .lesson-container section .dash-nav ul a:hover svg path,
+            body .challenge-container section .dash-nav ul a:hover svg path,
+            body .dash-container section .dash-nav ul a:hover svg path {
+              fill: #91edd5 !important; }
         body .lesson-container section .dash-nav:hover,
         body .challenge-container section .dash-nav:hover,
         body .dash-container section .dash-nav:hover {
@@ -51,8 +82,15 @@ body {
     body .lesson-container main,
     body .challenge-container main,
     body .dash-container main {
-      background-color: #F2F2F2;
+      background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
       grid-column: 2/14;
       grid-row: 1/12;
       padding-top: 10px;
       z-index: 1; }
+      @media only screen and (min-width: 320px) and (max-width: 48em) {
+        body .lesson-container main,
+        body .challenge-container main,
+        body .dash-container main {
+          grid-column: 1/14;
+          grid-row: 1/2;
+          margin-top: 45px; } }

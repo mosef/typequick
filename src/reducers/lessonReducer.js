@@ -2,6 +2,7 @@ import * as actionTypes from '../actions/actionTypes';
 
 const defaultSate = {
   lesson: {},
+  content: [],
   requestedLesson: [],
   lessonRecieved: false,
 };
@@ -12,6 +13,7 @@ const lessonReducer = (state = defaultSate, action) => {
       return {
         ...state,
         lesson: action.response.lesson,
+        content: action.response.lesson.chapter.page.content.paragraph,
         lessonRecieved: true,
       };
     case actionTypes.clearState:

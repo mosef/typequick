@@ -25,6 +25,12 @@ export function complete() {
   };
 }
 
+export function timeExpired() {
+  return {
+    type: actionTypes.timesUp,
+  };
+}
+
 export function clearState() {
   return {
     type: actionTypes.clearState,

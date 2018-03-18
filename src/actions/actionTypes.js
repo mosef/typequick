@@ -42,6 +42,7 @@ export const answerWasCorrect = 'ANSWER_WAS_CORRECT';
 export const answerWasWrong = 'ANSWER_WAS_INCORRECT';
 export const clearState = 'STATE_WAS_CLEARED';
 export const challengeComplete = 'CHALLENGE_COMPLETED';
+export const timesUp = 'TIMES_UP';
 export const sendResultsTriggered = 'SENDING_RESULTS_TRIGGERED';
 export const sendResultsSuccess = 'SENDING_RESULTS_SUCCESS';
 export const sendResultsFailure = 'SENDING_RESULTS_FAILURE';

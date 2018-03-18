@@ -5,6 +5,7 @@ const defaultState = {
   isTimerRunning: false,
   currentTimerStartedAt: null,
   currentTimerStoppedAt: null,
+  timeExpired: false,
   data: [],
   questionsArray: [],
   userAnswer: [],
@@ -29,6 +30,11 @@ const timerReducer = (state = defaultState, action) => {
         ...state,
         isTimerRunning: false,
         currentTimerStartedAt: state.currentTimerStartedAt,
+      };
+    case actionTypes.timesUp:
+      return {
+        ...state,
+        timeExpired: true,
       };
     case actionTypes.handleData: {
       const newData = dataHandler(state.data);
@@ -72,6 +78,7 @@ const timerReducer = (state = defaultState, action) => {
         isTimerRunning: false,
         currentTimerStartedAt: null,
         currentTimerStoppedAt: null,
+        timeExpired: false,
         data: [],
         questionsArray: [],
         userAnswer: [],
