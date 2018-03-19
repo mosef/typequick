@@ -4,19 +4,19 @@ import { ConnectedRouter } from 'react-router-redux';
 import { history } from '../store/store';
 import '../css/App.css';
 
-import ProtectedRoute from './login/protectedRoute';
-import loginForm from '../components/forms/loginForm';
+import ProtectedRoute from '../handlers/protectedRoute';
 import DashPage from '../components/pages/dashPage';
 import HomePage from '../components/pages/homePage';
 import challengePage from '../components/pages/challengePage';
 import lessonPage from '../components/pages/lessonPage';
+import loginPage from '../components/pages/loginPage';
 
 const App = () => (
   <div>
     <ConnectedRouter history={history}>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/login" component={loginForm} />
+        <Route exact path="/login" component={loginPage} />
         <ProtectedRoute path="/dash" component={DashPage} />
         <ProtectedRoute path="/lesson" component={lessonPage} />
         <ProtectedRoute path="/challenge" component={challengePage} />

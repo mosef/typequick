@@ -1,16 +1,15 @@
 import React from 'react';
-import Card from '../account-ui/card';
-import Sidebar from '../account-ui/sidebar';
+import Lessons from '../lesson-ui/Lessons';
+import Navbar from '../dash-ui/navbar';
+import '../../css/lessonPage.css';
 
 const lessonPage = () => (
-  <div className="container">
+  <div className="lesson-container">
     <section>
-      <Sidebar />
+      <Navbar />
     </section>
     <main>
-      <Card />
-      <Card />
-      <Card />
+      <Lessons />
     </main>
   </div>
 );

@@ -2,9 +2,9 @@ import React from 'react';
 import Countdown from 'react-countdown-now';
 import timeRenderer from './timeRenderer';
 
-const Timer = () => (
+const Timer = props => (
   <Countdown
-    date={Date.now() + 50000}
+    date={props.date}
     renderer={timeRenderer}
   />
 );

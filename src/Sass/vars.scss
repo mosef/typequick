@@ -1,5 +1,6 @@
 @import "bourbon";
-
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 //Colors
 $babyBlue: #56CCF2;
 $darkBlue: #293F5C;
@@ -7,6 +8,8 @@ $offDarkBlue: #324661;
 $paleRed: #EB5757;
 $darkRed: #C45151;
 $offWhite: #F2F2F2;
+$greenbtn: #09EEAF;
+$palegreen: rgb(145, 237, 213);
 
 // Breakpoints
 $bp-small: 48em; // 768px
@@ -16,12 +19,29 @@ $bp-xlarge: 120em; // 1920px
 $bp-xxlarge: 160em; // 2560px
 
 // Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$mq-small: "only screen and (min-width: 320px) and (max-width: #{$bp-small})";
+$mq-medium: "only screen and (min-width: #{$bp-medium}) and (max-width: #{$bp-large})";
+$mq-large: "only screen and (min-width: #{$bp-large}) and (max-width: #{$bp-xlarge})";
+$mq-xlarge: "only screen and (min-width: #{$bp-xlarge}) and (max-width: #{$bp-xxlarge})";
+$mq-xxlarge: "only screen and (min-width: #{$bp-xxlarge})";
+$mq-retina: "only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+// Display Mixins
+@mixin mobile {
+  @media #{$mq-small} {
+    @content;
+  }
+};
+@mixin tablet {
+  @media #{$mq-medium} {
+    @content;
+  }
+};
+@mixin desktop {
+  @media #{$mq-large} {
+    @content;
+  }
+};
 
 // Font-Size
 $base-font-size: 1em;
@@ -29,3 +49,7 @@ $base-font-size: 1em;
 // Line-Height
 $base-line-height: 1.5;
 $header-line-height: 1.25;
+
+//Font-Family
+$code-pro: 'Source Code Pro', monospace;
+$roboto: 'Roboto', sans-serif;

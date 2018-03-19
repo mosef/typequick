@@ -1,15 +1,15 @@
 import React from 'react';
-import Sidebar from '../account-ui/sidebar';
+import Navbar from '../dash-ui/navbar';
+import Chart from '../dash-ui/Chart';
 import '../../css/accountpage.css';
 
 const DashPage = () => (
-  <div className="container">
+  <div className="dash-container">
     <section>
-      <Sidebar />
+      <Navbar />
     </section>
     <main>
-      <h1>Dash Info Here</h1>
-
+      <Chart />
     </main>
   </div>
 );

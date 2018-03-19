@@ -1,0 +1,21 @@
+@import "vars";
+
+.dash-container {
+  .chart {
+    max-width: 100vw;
+    max-height: 50vh;
+    margin-top: 65px;
+  }
+  .legend {
+    color: white;
+  }
+  canvas {
+    grid-column: 2/10;
+    grid-row: 1/5;
+    background-color: white;
+    @include mobile {
+      grid-column: 1/1;
+      grid-row: auto;
+    }
+  }
+}

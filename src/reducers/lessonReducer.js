@@ -1,7 +1,10 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const defaultSate = {
-  lessons: [],
+  lesson: {},
+  content: [],
+  requestedLesson: [],
+  lessonRecieved: false,
 };
 
 const lessonReducer = (state = defaultSate, action) => {
@@ -9,7 +12,16 @@ const lessonReducer = (state = defaultSate, action) => {
     case actionTypes.getLessonsSuccess:
       return {
         ...state,
-        lessons: action.response,
+        lesson: action.response.lesson,
+        content: action.response.lesson.chapter.page.content.paragraph,
+        lessonRecieved: true,
+      };
+    case actionTypes.clearState:
+      return {
+        ...state,
+        lesson: [],
+        requestedLesson: [],
+        lessonRecieved: false,
       };
     default:
       return state;
