@@ -31,9 +31,7 @@ class Content extends Component {
         <section className="secondSection">
           <Headline header="How it works" tail=":" />
           <Info text="TypeQuick will improve your development time by cutting out
-              repetitive element typing. Pick a library you’d like to practice
-              with and begin lessons that range from basic to expert. In each
-              lesson small sections reveal code snippets and actions that produce
+              repetitive element typing. Lessons reveal code snippets and actions that produce
               multiple lines of code in a single line. Once you feel confident
               that you’ve got the snippets down it’s time for some time trials."
           />
