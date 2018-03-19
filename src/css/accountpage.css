@@ -5,6 +5,9 @@
   max-height: 50vh;
   margin-top: 65px; }
 
+.dash-container .legend {
+  color: white; }
+
 .dash-container canvas {
   grid-column: 2/10;
   grid-row: 1/5;

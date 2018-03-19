@@ -85,9 +85,6 @@
   width: 300px;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-  @media only screen and (min-width: 320px) and (max-width: 48em) {
-    .challenge-container .card {
-      margin-top: 65px; } }
   .challenge-container .card .top {
     width: 100%;
     background-color: #653F96;
@@ -104,6 +101,12 @@
     color: white; }
     .challenge-container .card .overview p {
       margin: 0; }
+  @media only screen and (min-width: 320px) and (max-width: 48em) {
+    .challenge-container .card {
+      margin-top: 65px; } }
+  @media only screen and (min-width: 64em) and (max-width: 85.375em) {
+    .challenge-container .card {
+      margin-top: 75px; } }
 
 .challenge-container .timeExp {
   margin: 0 auto;

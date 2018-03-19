@@ -97,9 +97,6 @@
     width: 300px;
     border-radius: 2px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      @include mobile {
-        margin-top: 65px;
-      }
     .top {
       width: 100%;
       background-color: #653F96;
@@ -120,6 +117,12 @@
       p {
         margin: 0;
       }
+    }
+    @include mobile {
+      margin-top: 65px;
+    }
+    @include tablet {
+      margin-top: 75px;
     }
   }
 

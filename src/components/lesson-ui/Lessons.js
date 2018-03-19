@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getLessons, clearState } from '../../actions/LessonActions';
 import EmmetLogo from '../../img/emmet-logo.png';
@@ -88,6 +89,7 @@ class Lessons extends Component {
                 create with Emmet but for now these are the essentials needed to
                 get started. Try testing your knowledge in a challenge!
               </p>
+              <Link to="/challenge"><button className="try-chall">Try Challenge</button></Link>
             </div>
           </div>) : (null)
       }

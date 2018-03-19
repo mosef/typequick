@@ -1,102 +1,164 @@
-@import 'vars';
+@import "vars";
 html {
   margin: 0;
   padding: 0;
   height: 100vh;
+  width: 100vw;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   margin: 0 auto;
-  background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
-    button {
-      height: 40px;
-      width: 180px;
-      border-radius: 2px;
-      color: white;
-      border: none;
-      background-color: $palegreen;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-        0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-      margin-top: 10px;
-      transition: all 0.3s ease 0s box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
-        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
-      &:hover {
-        background: $greenbtn;
-      }
+  background: linear-gradient(
+    136.74deg,
+    rgba(101, 63, 150, 0.95) 23.49%,
+    #482a68 73.49%
+  );
+  button {
+    height: 40px;
+    width: 180px;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    background-color: $palegreen;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+    transition: all 0.3s ease 0s box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:hover {
+      background: $greenbtn;
     }
-    ul {
-      margin-top: 0;
-    }
+  }
+  ul {
+    margin-top: 0;
+  }
   .lesson-container,
   .challenge-container,
   .dash-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  margin: 0 auto;
-  @include mobile {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(100px, auto);
-  }
-  section {
-    grid-column: 1/2;
-    grid-row: 1/12;
-    z-index: 2;
+    max-height: 100vh;
+    margin: 0 auto;
     @include mobile {
-      grid-column: 1/1;
-      grid-row: 1/2;
-      z-index: 2;
-      height: 50px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: minmax(100px, auto);
     }
-    .dash-nav {
-      background: linear-gradient(136.74deg, rgba(101, 63, 150, 0.95) 23.49%, #482A68 73.49%);
-      height: 100%;
-      padding-top: 15px;
+    section {
+      grid-column: 1/2;
+      grid-row: auto;
+      z-index: 2;
       @include mobile {
-        height: auto;
-        padding-top: 10px 0px;
+        grid-column: 1/1;
+        grid-row: 1/2;
+        z-index: 2;
+        height: 50px;
       }
-       ul {
-         text-align: center;
-         list-style: none;
-         padding: 0px;
-         @include mobile {
-           display: inline;
-         }
-         li {
-           padding-top: 15px;
-           @include mobile {
-             display: inherit;
-             padding-left: 10px;
-           }
-         }
-         a {
-           color: rgb(255, 255, 255);
-           text-decoration: none;
-           cursor: pointer;
-           @include mobile {
-            svg {
-              width: 10%;
-              height: 10%;
-            }
-           }
-            &:hover {
-              svg {
-                path {
-                  fill: $palegreen !important;
+      .dash-nav {
+        background: linear-gradient(
+          136.74deg,
+          rgba(101, 63, 150, 0.95) 23.49%,
+          #482a68 73.49%
+        );
+        height: 98vh;
+        padding-top: 15px;
+        @include mobile {
+          height: 100%;
+          padding-top: 0px;
+        }
+        ul {
+          list-style: none;
+          li {
+            a {
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+              cursor: pointer;
+              @include mobile {
+                svg {
+                }
+              }
+              &:hover {
+                svg {
+                  path {
+                    fill: $palegreen !important;
+                  }
                 }
               }
             }
           }
         }
-      &:hover {
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        @include mobile {
+          height: auto;
+          padding-top: 10px 0px;
+        }
+        .menu-grid {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-auto-rows: minmax(100px, auto);
+          padding: 0px;
+          @include mobile {
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            align-self: end;
+          }
+          .dash-l {
+            padding-top: 15px;
+            grid-column: 1/1;
+            grid-row: 1/2;
+            svg {
+              width: 100%;
+            }
+            @include mobile {
+              grid-column: 1/2;
+              grid-row: 1/1;
+            }
+          }
+          .lesson-l {
+            padding-top: 15px;
+            grid-column: 1/1;
+            grid-row: 2/3;
+            svg {
+              width: 100%;
+            }
+            @include mobile {
+              grid-column: 2/3;
+              grid-row: 1/1;
+            }
+          }
+          .chall-l {
+            padding-top: 15px;
+            grid-column: 1/1;
+            grid-row: 3/4;
+            svg {
+              width: 100%;
+            }
+            @include mobile {
+              grid-column: 3/4;
+              grid-row: 1/1;
+            }
+          }
+          .logout-l {
+            padding-top: 15px;
+            grid-column: 1/1;
+            grid-row: 4/5;
+            svg {
+              width: 100%;
+            }
+            @include mobile {
+              grid-column: 4/5;
+              grid-row: 1/1;
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
+        }
       }
     }
-  }
     main {
       grid-column: 2/14;
       padding-top: 10px;
@@ -104,7 +166,7 @@ body {
       @include mobile {
         grid-column: 1/1;
         grid-row: 1/2;
-        margin-top: 45px;
+        margin-top: 88px;
       }
     }
   }

@@ -4450,7 +4450,7 @@
 		"oA": 0,
 		"oAP": "\/src\/img\/divs.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/src\/img\/emmet-logo.png": {
 		"ft": 32768,
@@ -4458,8 +4458,8 @@
 		"oA": 0,
 		"oAP": "\/src\/img\/emmet-logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4477,7 +4477,7 @@
 		"oA": 0,
 		"oAP": "\/src\/img\/grouping.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/src\/img\/ic_book_48px.svg": {
 		"ft": 2097152,
@@ -4525,7 +4525,7 @@
 		"oA": 0,
 		"oAP": "\/src\/img\/multiply.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/src\/img\/nesting.gif": {
 		"ft": 4194304,
@@ -4533,7 +4533,7 @@
 		"oA": 0,
 		"oAP": "\/src\/img\/nesting.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/src\/img\/siblings.gif": {
 		"ft": 4194304,
@@ -4541,7 +4541,7 @@
 		"oA": 0,
 		"oAP": "\/src\/img\/siblings.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/src\/img\/signUp-bg.png": {
 		"ft": 32768,
