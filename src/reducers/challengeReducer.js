@@ -16,7 +16,7 @@ const defaultState = {
   showReturn: false,
 };
 
-const timerReducer = (state = defaultState, action) => {
+const challengeReducer = (state = defaultState, action) => {
   switch (action.type) {
     case actionTypes.startTimerSuccess:
       return {
@@ -92,4 +92,4 @@ const timerReducer = (state = defaultState, action) => {
   }
 };
 
-export default timerReducer;
+export default challengeReducer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import TimesUp from './timesUp';
-// Renderer callback with condition
+
 const timeRenderer = ({
   hours, minutes, seconds, completed,
 }) => {

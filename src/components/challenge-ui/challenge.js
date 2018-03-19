@@ -63,10 +63,10 @@ class Challenge extends Component {
 }
 
 const mapStateToProps = state => ({
-  challengeCompleted: state.timerReducer.challengeCompleted,
+  challengeCompleted: state.challengeReducer.challengeCompleted,
   timer: {
-    isTimerRunning: state.timerReducer.isTimerRunning,
-    currentTimerStartedAt: state.timerReducer.currentTimerStartedAt,
+    isTimerRunning: state.challengeReducer.isTimerRunning,
+    currentTimerStartedAt: state.challengeReducer.currentTimerStartedAt,
   },
 });
 

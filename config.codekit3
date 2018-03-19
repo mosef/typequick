@@ -4615,6 +4615,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/reducers\/challengeReducer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/reducers\/challengeReducer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/reducers\/homeReducer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4641,16 +4651,6 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/src\/reducers\/lessonReducer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/reducers\/timerReducer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/src\/reducers\/timerReducer-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

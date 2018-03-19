@@ -1,3 +1,4 @@
+/* eslint import/prefer-default-export: off, no-underscore-dangle:0 */
 import * as actionTypes from './actionTypes';
 
 export const startTimerNow = () => {

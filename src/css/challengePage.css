@@ -31,6 +31,7 @@
         grid-column: 1/1;
         grid-row: 1/2; } }
   .challenge-container .form-box #answer {
+    color: white;
     background-color: rgba(255, 255, 255, 0);
     width: 22em;
     height: 2em;
@@ -43,8 +44,7 @@
       .challenge-container .form-box #answer {
         grid-column: 1/1;
         width: 90%;
-        margin: 10px;
-        color: white; } }
+        margin: 10px; } }
   .challenge-container .form-box .feedback-bar {
     background-color: #EB5757;
     width: 22em;

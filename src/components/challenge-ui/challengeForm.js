@@ -121,15 +121,15 @@ class ChallengeForm extends Component {
 }
 
 const mapStateToProps = state => ({
-  challengeCompleted: state.timerReducer.challengeCompleted,
-  questionsArray: state.timerReducer.questionsArray,
-  questionHeader: state.timerReducer.questionHeader,
-  userAnswer: state.timerReducer.userAnswer,
-  correctAnswer: state.timerReducer.correctAnswer,
-  answerIsCorrect: state.timerReducer.answerIsCorrect,
-  data: state.timerReducer.data,
-  currentTimerStartedAt: state.timerReducer.currentTimerStartedAt,
-  showReturn: state.timerReducer.showReturn,
+  challengeCompleted: state.challengeReducer.challengeCompleted,
+  questionsArray: state.challengeReducer.questionsArray,
+  questionHeader: state.challengeReducer.questionHeader,
+  userAnswer: state.challengeReducer.userAnswer,
+  correctAnswer: state.challengeReducer.correctAnswer,
+  answerIsCorrect: state.challengeReducer.answerIsCorrect,
+  data: state.challengeReducer.data,
+  currentTimerStartedAt: state.challengeReducer.currentTimerStartedAt,
+  showReturn: state.challengeReducer.showReturn,
 });
 
 const connected = connect(mapStateToProps,

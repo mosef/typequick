@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import { routerReducer } from 'react-router-redux';
 import lessonReducer from './lessonReducer';
-import timerReducer from './timerReducer';
+import challengeReducer from './challengeReducer';
 import userReducer from './userReducer';
 import homeReducer from './homeReducer';
 
@@ -11,7 +11,7 @@ const reducer = combineReducers({
   routing: routerReducer,
   homeReducer,
   lessonReducer,
-  timerReducer,
+  challengeReducer,
   userReducer,
 });
 
