@@ -1,7 +1,7 @@
 This is the front end for the TypeQuick Project
 
 <h1>TypeQuick</h1>
-<p><a href="">TypeQuick</a> is a responsive full-stack app made to teach developers to code faster</p>
+<p><a href="http://frosty-wright-cc1a68.netlify.com/">TypeQuick</a> is a responsive full-stack app made to teach developers to code faster</p>
 
 ## Getting started
 ### Installing
