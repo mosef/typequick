@@ -53,7 +53,7 @@ class LoginForm extends Component {
 }
 
 
-const connected = connect(null, { authenticateUser })(LoginForm);
+const connected = connect(null, { authenticateUser })((LoginForm));
 
 export default reduxForm({
   form: 'login',
