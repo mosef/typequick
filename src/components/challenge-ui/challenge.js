@@ -46,8 +46,13 @@ class Challenge extends Component {
                 <div className="overview">
                   <h3>Instructions:</h3>
                   <p>You have 5 minutes to complete the challenge.</p>
-                  <p>Questions will be chosen at random and your answers must be in lower case.</p>
-                  <p>If you run out of time the challenge will end
+                  <p>Questions will be chosen at random. Your answers must be in lower case and
+                    in the form of a shortcut.
+                  </p>
+                  <h4>ex: a div with a class of frog will have an answer
+                    of ".frog"
+                  </h4>
+                  <p>If you run out of time the challenge will end and
                     the results will not count against your time records.
                   </p>
                 </div>
