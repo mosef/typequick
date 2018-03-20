@@ -14,6 +14,11 @@ class Content extends Component {
     return (
       <div className="main-container">
         <section className="firstSection">
+          <div className="loginfo">
+            <h3>Demo Login</h3>
+            <p>demo@demo.com</p>
+            <p>demo123</p>
+          </div>
           <Headline header="What's it for" tail="?" />
           <Info text="TypeQuick is a learning tool for
               new and experienced developers who are comfortable with
