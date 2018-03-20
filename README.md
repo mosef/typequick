@@ -18,7 +18,7 @@ The backend can be found here:<a href="https://github.com/mosef/typequick-api">T
 Then open [`localhost:8000`](http://localhost:8000) in a browser.
 ```
 >   Demo Log In:
-username: demo
+email: demo@demo.com
 password: demo123
 ```
 
