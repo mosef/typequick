@@ -18,6 +18,7 @@ describe('Component: challenge', () => {
     sessionStorage: {
       token: 'string',
     },
+    gameForm: {},
   };
 
   let wrapper;

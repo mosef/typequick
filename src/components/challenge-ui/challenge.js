@@ -4,7 +4,6 @@ import { reduxForm } from 'redux-form';
 import PropTypes from 'prop-types';
 import { startTimerNow } from '../../actions/TimerActions';
 import { clearState } from '../../actions/ChallengeActions';
-import ChallengeForm from './challengeForm';
 import Timer from './timer';
 import '../../css/challengePage.css';
 
@@ -30,13 +29,16 @@ class Challenge extends Component {
     this.props.clearState();
   }
   render() {
+    const {
+      timer, challengeCompleted, gameForm, startTimerNow,
+    } = this.props;
     return (
       <div>
-        {this.props.timer.isTimerRunning ?
+        {timer.isTimerRunning ?
           <div>
-            <Timer date={this.props.timer.currentTimerStartedAt + 300000} />
-            {this.props.challengeCompleted ?
-              (null) : (<ChallengeForm />)}
+            <Timer date={timer.currentTimerStartedAt + 300000} />
+            {challengeCompleted ?
+              (null) : (gameForm)}
           </div>
           :
           <div>
@@ -56,7 +58,7 @@ class Challenge extends Component {
                     the results will not count against your time records.
                   </p>
                 </div>
-                <button onClick={this.props.startTimerNow}>Start</button>
+                <button onClick={startTimerNow}>Start</button>
               </div>
             </div>
             <div className="progress" id="progress" />
