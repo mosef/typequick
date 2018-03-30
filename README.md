@@ -2,7 +2,7 @@ This is the front end for the TypeQuick Project
 The backend can be found here:<a href="https://github.com/mosef/typequick-api">TypeQuick Backend</a>
 
 <h1>TypeQuick</h1>
-<p><a href="typequick.netlify.com">TypeQuick</a> is a responsive full-stack app made to teach developers to code faster</p>
+<p><a href="https://typequick.netlify.com/">TypeQuick</a> is a responsive full-stack app made to teach developers to code faster</p>
 
 ## Getting started
 ### Installing
