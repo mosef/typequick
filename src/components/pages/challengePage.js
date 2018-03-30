@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../dash-ui/navbar';
 import Challenge from '../challenge-ui/challenge';
+import ChallengeForm from '../challenge-ui/challengeForm';
 
 const challengePage = () => (
   <div className="challenge-container">
@@ -8,7 +9,7 @@ const challengePage = () => (
       <Navbar />
     </section>
     <main>
-      <Challenge />
+      <Challenge gameForm={<ChallengeForm />} />
     </main>
   </div>
 );
