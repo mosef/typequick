@@ -3,6 +3,7 @@ The backend can be found here:<a href="https://github.com/mosef/typequick-api">T
 
 <h1>TypeQuick</h1>
 <p><a href="https://typequick.netlify.com/">TypeQuick</a> is a responsive full-stack app made to teach developers to code faster</p>
+<img src="./src/img/type-cap.png" alt="" />
 
 ## Getting started
 ### Installing
